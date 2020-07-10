@@ -11,7 +11,7 @@ public class DesktopLauncher {
       // This seems behaviour seems arbitrary as one wouldn't think loading an AWT class should have an//
       // effect on their libGDX application.
       Class.forName(System.getProperty("java.awt.graphicsenv"));
-      // (sun.awt.Win32GraphicsEnvironment on Windows)
+      // Try running the build with and without the above line to see the difference.
     
       // This is currently how I disable Windows scaling in my applications. Is there a recognized way to do
       // this from within libGDX?
